@@ -1,7 +1,7 @@
 # Trabajo Práctico N° 3: HTML y CSS
 **Carrera:** Licenciatura en Sistemas de Información (FCyT Sede Concepción del Uruguay)
 **Materia:** Diseño UX-UI (2026)
-**Alumno:** [Tu Nombre y Apellido]
+**Alumno:** Wetzel Enzo 
 
 ---
 
