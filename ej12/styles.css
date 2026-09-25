@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    height: 1500px; /* Altura extra para probar el scroll */
+}
+
+/* Tooltip */
+.tooltip-contenedor {
+    position: relative;
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tooltip-texto {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    display: none; /* Oculto por defecto */
+    z-index: 10;
+}
+
+/* Muestra el tooltip al pasar el cursor */
+.tooltip-contenedor:hover .tooltip-texto {
+    display: block;
+}
+
+/* Botón fijo en la pantalla */
+.btn-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}

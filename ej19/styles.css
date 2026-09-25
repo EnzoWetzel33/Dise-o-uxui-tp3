@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.contenedor-form {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Ocultamos los radio buttons reales */
+input[type="radio"] {
+    display: none;
+}
+
+.pasos-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+.pasos-nav label {
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Validaciones nativas HTML5 con CSS */
+input:focus:invalid {
+    border-color: red;
+}
+
+input:focus:valid {
+    border-color: green;
+}
+
+/* Ocultamos ambas secciones por defecto */
+.seccion-paso1, .seccion-paso2 {
+    display: none;
+}
+
+/* TRUCO: Mostramos el paso según el radio button seleccionado */
+#paso1:checked ~ form .seccion-paso1 { display: block; }
+#paso2:checked ~ form .seccion-paso2 { display: block; }
+
+#paso1:checked ~ .pasos-nav .label-paso1,
+#paso2:checked ~ .pasos-nav .label-paso2 {
+    border-bottom: 3px solid blue;
+    color: blue;
+}
+
+.btn-siguiente, .btn-enviar {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}

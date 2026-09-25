@@ -1,0 +1,12 @@
+#titulo-principal {
+    color: darkblue;
+}
+
+.card {
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.card p {
+    color: darkgreen;
+}

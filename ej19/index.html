@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 19 - Formulario Multi-step</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="contenedor-form">
+        <!-- Radio buttons ocultos para controlar el paso activo -->
+        <input type="radio" name="paso" id="paso1" checked>
+        <input type="radio" name="paso" id="paso2">
+
+        <!-- Selector de pestañas superiores -->
+        <div class="pasos-nav">
+            <label for="paso1" class="label-paso1">Paso 1: Datos</label>
+            <label for="paso2" class="label-paso2">Paso 2: Cuenta</label>
+        </div>
+
+        <form>
+            <!-- Paso 1 -->
+            <div class="seccion-paso1">
+                <h3>Información Personal</h3>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" required placeholder="Ej: Juan Pérez">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" required placeholder="correo@ejemplo.com">
+
+                <label for="paso2" class="btn-siguiente">Siguiente ➔</label>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="seccion-paso2">
+                <h3>Crear Contraseña</h3>
+                <label for="password">Contraseña (mínimo 6 caracteres):</label>
+                <input type="password" id="password" required minlength="6">
+
+                <button type="submit" class="btn-enviar">Registrarse</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

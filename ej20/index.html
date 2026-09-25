@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 20 - Landing Page Integradora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Fija -->
+    <header class="header">
+        <div class="logo">UX-UI Studio</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sección Hero -->
+        <section id="hero" class="hero">
+            <div class="hero-contenido">
+                <h1>Diseño y Desarrollo Web</h1>
+                <p>Creamos interfaces modernas y fáciles de usar para tus proyectos.</p>
+                <a href="#contacto" class="btn">Empezar Ahora</a>
+            </div>
+        </section>
+
+        <!-- Sección Servicios (Grid) -->
+        <section id="servicios" class="servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="grid-servicios">
+                <div class="card">
+                    <h3>Diseño UX/UI</h3>
+                    <p>Interfaces intuitivas centradas en la experiencia del usuario.</p>
+                </div>
+                <div class="card">
+                    <h3>Maquetado Web</h3>
+                    <p>Estructuras limpias y semánticas con HTML5 y CSS3.</p>
+                </div>
+                <div class="card">
+                    <h3>Diseño Responsivo</h3>
+                    <p>Adaptación perfecta a computadoras, tablets y celulares.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Testimonios (Scroll-Snap) -->
+        <section id="testimonios" class="testimonios">
+            <h2>Testimonios</h2>
+            <div class="carrusel-snap">
+                <div class="testimonio">"Excelente servicio, la web quedó muy rápida y linda." - Juan P.</div>
+                <div class="testimonio">"Muy buena atención y código súper ordenado." - María L.</div>
+                <div class="testimonio">"Superaron mis expectativas en tiempo y calidad." - Carlos G.</div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form class="form-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 UX-UI Studio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

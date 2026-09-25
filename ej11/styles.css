@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.lista-links {
+    list-style: none;
+    padding: 0;
+    width: 250px;
+}
+
+.lista-links li {
+    padding: 10px;
+}
+
+/* Pseudo-clase 1: Selecciona las filas pares */
+.lista-links li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Pseudo-clase 2: Cambio visual al pasar el cursor */
+.lista-links a:hover {
+    color: red;
+}
+
+/* Pseudo-elemento: Agrega una flechita antes del texto sin escribirla en el HTML */
+.lista-links a::before {
+    content: "➔ ";
+    color: blue;
+}

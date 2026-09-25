@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.formulario {
+    background-color: white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Inputs y Textarea estilizados */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /* Transición suave para cuando cambia el borde */
+    transition: border-color 0.3s ease;
+}
+
+/* Estado :focus (cuando el usuario hace clic para escribir) */
+input:focus, textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Botón con transiciones interactivas */
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    /* Transición de color al hacer hover o dar clic */
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Estado :hover (al pasar el mouse) */
+.btn-enviar:hover {
+    background-color: #003d80;
+}
+
+/* Estado :active (mientras se mantiene presionado el clic) */
+.btn-enviar:active {
+    transform: scale(0.98);
+}

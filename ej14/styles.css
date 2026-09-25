@@ -1,0 +1,39 @@
+/* Variables para modo claro (por defecto) */
+:root {
+    --color-fondo: #ffffff;
+    --color-texto: #222222;
+    --color-primario: #0066cc;
+    --color-tarjeta: #f0f0f0;
+    --espaciado: 20px;
+    --borde-radio: 8px;
+}
+
+/* Cambiamos las variables si el body tiene la clase modo-oscuro */
+body.modo-oscuro {
+    --color-fondo: #1e1e1e;
+    --color-texto: #ffffff;
+    --color-primario: #4da6ff;
+    --color-tarjeta: #2d2d2d;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    padding: var(--espaciado);
+}
+
+.tarjeta {
+    background-color: var(--color-tarjeta);
+    padding: var(--espaciado);
+    border-radius: var(--borde-radio);
+}
+
+.btn {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--borde-radio);
+    cursor: pointer;
+}

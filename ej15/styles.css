@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Enfoque Desktop-First: Estilos base para pantallas grandes */
+.contenedor {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas:
+        "header  header"
+        "sidebar contenido"
+        "footer  footer";
+    min-height: 100vh;
+}
+
+.header { grid-area: header; background-color: #333; color: white; padding: 20px; }
+.sidebar { grid-area: sidebar; background-color: #ddd; padding: 20px; }
+.contenido { grid-area: contenido; background-color: #fff; padding: 20px; }
+.footer { grid-area: footer; background-color: #222; color: white; padding: 15px; }
+
+/* Breakpoint 1: Tablet / Pantallas medianas (menos de 768px) */
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "contenido"
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Breakpoint 2: Celulares / Pantallas chicas (menos de 480px) */
+@media (max-width: 480px) {
+    .header, .contenido, .footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
